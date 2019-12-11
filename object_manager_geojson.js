@@ -26,8 +26,8 @@ ymaps.ready(function () {
             // Добавляем объекты на карту.
             map.geoObjects.add(objectManager);
             map.geoObjects.events.add('click', function (event) {
-                console.log(1);
-                const target = event.get('target');
+                const target = event.get('objectId');
+                console.log(target);
                 //
                 // window.location.href = target.properties.get('locationUrl');
             });
